@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object fit</title>
+    <style>
+        .container{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .box1{
+            width: 32%;
+            border: 2px solid red;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-right: 8px;
+            margin-bottom: 13px;
+        }
+        .box1 img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+
+        }
+        .box1 img{
+            width: 100%;
+        }
+        @media screen and (max-width:950px) {
+            .box1{
+                width: 48%;
+            }
+
+
+            
+        }
+        @media screen and (max-width:800px) {
+            .box1{
+                width: 100%;
+            }
+
+
+            
+        }
+
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <img src="download.jpg" />
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non officia
+        doloremque quas. Officiis aspernatur repellendus maxime! Dolor tenetur
+        porro minima eos esse illum nam explicabo! Ipsam eius corrupti laborum
+        maiores.
+      </div>
+      <div class="box1">
+        <img src="images (1).jpg" />
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi nobis
+        vero, ea amet ipsum fugiat ullam enim. Veniam, consectetur aliquam
+        facilis dolorum aut veritatis quam ut, fugiat ipsum voluptas error?
+      </div>
+      <div class="box1">
+        <img src="images.jpg" />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ea nihil,
+        tempora, tempore, quis enim ratione magnam voluptas dignissimos hic
+        maxime eaque! Ducimus temporibus harum perspiciatis expedita fuga, nobis
+        blanditiis?
+      </div>
+    </div>
+  </body>
+</html>

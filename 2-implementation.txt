@@ -1,0 +1,1 @@
+css can be implemented usig inline, external style sheet and inpage style css 
