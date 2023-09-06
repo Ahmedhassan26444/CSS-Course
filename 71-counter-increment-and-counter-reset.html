@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counter increment and counter reset</title>
+    <style>
+        body{
+            counter-reset: my-counter 0;
+        }
+        h1::before{
+            content: "chapter" counter(my-counter) ":";
+            counter-increment: my-counter 3;
+        }
+        div h1{
+            color:black;
+
+        }
+        div p{
+            font-size: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Lorem ipsum dolor sit amet.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit molestias
+        labore ad, a sed quae!
+      </p>
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quae
+        nihil iure quos, doloremque
+      </p>
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+        architecto similique, perspiciatis sit facilis ipsum labore. Tempore aut
+        id praesentium veritatis aperiam aliquam consequuntur adipisci earum,
+        ea, laboriosam impedit quae.
+      </p>
+    </div>
+  </body>
+</html>
