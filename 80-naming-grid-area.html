@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naming grid item</title>
+    <style>
+        .container{
+            width: 720px;
+            background-color: #eee;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3,1fr) ;
+            grid-template-rows:120px 60px 100px  400px 50px;
+            grid-gap:15px;
+            grid-template-areas:"header header header" 
+                                 "menu menu menu"
+                                 "box1 box2 slidebar"
+                                 "content content slidebar"
+                                 "footer footer footer";
+        }
+        .header{
+            background-color: orangered;
+            grid-area: header;
+          
+        }
+        .menu{
+            background-color: yellowgreen;
+            grid-area: menu;
+          
+
+        }
+        .box1{
+            background-color: mediumpurple;
+            grid-area: box1;
+          
+
+
+
+        }
+        .box2{
+            background-color: hotpink;
+            grid-area: box2;
+          
+
+        }
+        .slidebar{
+            background-color: royalblue;
+            grid-area: slidebar;
+          
+          
+
+        }
+        .content{
+
+            background-color: #7DCEA0;
+            grid-area: content;
+          
+           
+
+        }
+        .footer{
+         background-color: goldenrod;
+         grid-area: footer;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+    <div class="header"> header</div>
+    <div class="menu">menu</div>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="slidebar">slidebar</div>
+    <div class="content">content</div>
+    <div class="footer">footer</div>
+</div>
+</body>
+</html>
