@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid fit content</title>
+    <style>
+      .container {
+        width: 650px;
+        background-color: #eee;
+        margin: 50px auto 0;
+        display: grid;
+        grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+        grid-template-rows: repeat(2, 100px);
+      }
+      .item1 {
+        background-color: orangered;
+      }
+      .item2 {
+        background-color: yellowgreen;
+      }
+      .item3 {
+        background-color: slateblue;
+      }
+      .item4 {
+        background-color: hotpink;
+      }
+
+      .item5 {
+        background-color: black;
+      }
+
+      .item6 {
+        background-color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">
+        1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+        dolore itaque, hic fugiat numquam eos, nulla, optio reiciendis esse
+        voluptatem cum nemo suscipit! Dolorum facilis nam, molestiae non quia
+      </div>
+      <div class="item2">
+        2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum optio
+        nisi cupiditate repudiandae, nihil eum maxime fuga ab dolores? Eos
+        inventore adipisci optio eaque placeat dignissimos expedita odit ut
+        reiciendis.
+      </div>
+      <div class="item3">3</div>
+      <div class="item4">
+        4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi magni
+        fugit ab, obcaecati maxime cupiditaluptatum voluptas est.
+      </div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+    </div>
+  </body>
+</html>
