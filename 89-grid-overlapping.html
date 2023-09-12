@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        overlapping grid
+    </title>
+    <style>
+        .container {
+            width: 300px;
+            background-color: #eee;
+            margin: 50px auto 0;
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 150px);
+            grid-auto-rows: 50px;
+            grid-gap: 2px;
+
+        }
+
+        .item1 {
+            background-color: orangered;
+            grid-column: 1 /span 2;
+            grid-row: 1 /span 2;
+            align-self: start;
+
+
+        }
+
+        .item2 {
+            background-color: yellowgreen;
+            grid-column: 1 /span 2;
+            grid-row: 1 /span 2;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .item3 {
+            background-color: hotpink;
+            grid-column: 1 /span 2;
+            grid-row: 1 /span 2;
+            align-self: end;
+            justify-self: end;
+        }
+
+        .item {
+            max-width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" item item1">one Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis itaque ut
+            aliquid aliquam mollitia obcaecati sunt saepe quia cum a est blanditiis quisquam perferendis, debitis enim.
+            Earum assumenda ad nihil!></div>
+        <div class=" item item2">two Forem ipsum dolor, sit amet consectetur adipisicing elit. Ut, inventore
+            perspiciatis sapiente, est et, quasi quae sed sint pariatur magnam repellat quisquam officiis ullam
+            consequatur at voluptatem reiciendis officia fugit?</div>
+        <div class=" item item3">three Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, delectus,
+            inventore quas molestiae ipsa harum aut dolorum et ducimus iusto iste aperiam amet in atque. Non accusantium
+            ullam rerum reiciendis.</div>
+</body>
+</body>
+
+</html>

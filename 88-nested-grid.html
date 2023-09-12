@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            nested grid
+        </title>
+        <style>
+            .container {
+                width: 650px;
+                background-color: #eee;
+                margin: 70px auto 0;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-template-rows: repeat(2, 150px);
+                grid-auto-rows: 60px;
+                grid-gap: 10px;
+
+            }
+            .item1 {
+                background-color: orangered;
+
+
+            }
+            .item2 {
+                background-color: yellowgreen;
+
+
+            }
+            .item3 {
+                background-color: mediumpurple;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2px;
+            }
+            .item3 > div {
+                color: red;
+                background-color:mediumturquoise;
+                padding: 10px;
+            }
+            .item4 {
+                background-color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1">one</div>
+            <div class="item2">two</div>
+            <div class="item3">three
+                <div class="subitem1">a</div>
+                <div class="subitem2">b</div>
+                <div class="subitem3">c</div>
+            </div>
+            <div class="item4">four</div>
+        </body>
+    </body>
+</html>
