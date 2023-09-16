@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink</title>
+    <style>
+        .container{
+            margin: 50px;
+            padding:0px;
+            display: flex;
+        }
+        .item1{
+            background-color:orangered;
+            flex-shrink: 1;
+
+        }
+        .item2{
+        background-color: yellowgreen;   
+        flex-shrink: 1;
+        }
+        .item3{
+            background-color:mediumpurple ;
+            flex-shrink: 1;
+        }
+        .item4{
+            background-color: hotpink;
+            flex-shrink: 1
+        }
+        .item{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0 0 0 40px;
+            width: 100px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one</div>
+        <div class="item item2">two</div>
+        <div class="item item3">three</div>
+        <div class="item item4">four</div>
+    </div>
+</body>
+</html>
