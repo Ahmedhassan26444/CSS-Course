@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>aligin from element</title>
+        <style>
+            .wrapper {
+                background-color: whitesmoke;
+                list-style: none;
+                margin:50px ;
+                padding:10px ;
+            }
+            .wrapper li{
+                display: flex;
+                padding: 2px;
+                justify-content: flex-end;
+
+            }
+            
+            .wrapper li label{ 
+                flex: 0.5;
+            }
+            .wrapper li input{ 
+                flex:1;
+                
+                
+            }
+            @media screen and (min-width:1200px) {
+                .wrapper li input{ 
+                flex:6;   
+            }
+            }
+            @media screen and (min-width:992px) {
+                .wrapper li input{ 
+                flex:6;   
+            }
+            }
+            @media screen and (min-width:768px) {
+                .wrapper li input{ 
+                flex:4;   
+            }
+            }
+            @media screen and (min-width:500px) {
+                .wrapper li input{ 
+                flex:3;   
+            }
+            }
+            @media screen and (min-width:499px) {
+                .wrapper li{
+                display: flex;
+                flex-direction:column ;
+
+            }
+                .wrapper li input{ 
+                flex:2;   
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <form action=""></form>
+        <ol class="wrapper">
+            <li>
+                <label for="name">name :</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="class name">cinic :</label>
+                <input type="text">
+            </li>
+            <li>
+                <label for="age">age :</label>
+                <input type="number">
+            </li>
+            <li>
+                <label for="roll number">number:</label>
+                <input type="number">
+            </li>
+            <li>
+            <button>save</button>
+            </li>
+        </ol>
+    </body>
+</html>
