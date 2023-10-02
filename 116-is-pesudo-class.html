@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>is pesudo class</title>
+    <style>
+        .test1:is(h1 h2 h3 p){
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="test1">
+      <h1>section1</h1>
+      <h2>sub heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias
+        consequuntur numquam natus, suscipit quasi autem dolore esse quos quae
+        aspernatur beatae corrupti deserunt at assumenda, officiis rem itaque
+        veniam?
+        <h3>sub heading</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Dignissimos quos totam quisquam consectetur officiis temporibus?
+        </p>
+      </p> 
+    </div>
+    <div class="text2">
+         <h1>section2</h1>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, 
+            est impedit a minima illo pariatur eius dignissimos! Consequuntur, 
+            natus officia!
+         </p>
+    </div>
+
+  </body>
+</html>
