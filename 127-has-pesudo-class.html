@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>has pesudo class</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        div{
+            border: black solid 1px ;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        div:has(h1){
+            color: aqua;
+            font-size: larger;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="abc">
+        <h1>heading</h1>
+      </div>
+    </div>
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi eaque
+        quasi aut nulla et sint quibusdam repudiandae dolore dicta optio ipsa,
+        quo reiciendis! Obcaecati dolor, veniam beatae consequatur temporibus
+        id.
+      </p>
+    </div>
+  </body>
+</html>
